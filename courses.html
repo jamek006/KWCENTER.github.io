@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>โรงเรียนกวดวิชาแก่นวิทย์</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      margin: 0;
+      background-color: #f4f9ff;
+      color: #003366;
+    }
+
+    header {
+      background-color: #0099ff;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    header img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .level-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .level-buttons a {
+      display: block;
+      background-color: #0099ff;
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    .level-buttons a:hover {
+      background-color: #007acc;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="image.png" alt="โลโก้โรงเรียนกวดวิชา">
+    <h1>โรงเรียนกวดวิชาแก่นวิทย์ (K.W. Center)</h1>
+    <p>เลือกชั้นเรียนเพื่อดูรายละเอียดคอร์ส</p>
+  </header>
+
+  <main>
+    <div class="level-buttons">
+      <a href="p1p2.html">ป.1 – ป.2</a>
+      <a href="p3p4.html">ป.3 – ป.4</a>
+      <a href="p5.html">ป.5</a>
+      <a href="p6.html">ป.6</a>
+      <a href="m1m2.html">ม.1 – ม.2</a>
+      <a href="m3.html">ม.3</a>
+      <a href="register.html">สมัครเรียน (ที่นี้)</a>
+      <a href="re.html">สอบถามข้อมูล</a>
+      <a href="index.html" class="back">&larr; กลับหน้าหลัก</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 โรงเรียนกวดวิชาแก่นวิทย์</p>
+  </footer>
+</body>
+</html>
