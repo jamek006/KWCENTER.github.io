@@ -1,0 +1,174 @@
+body {
+  font-family: 'Sarabun', sans-serif;
+  margin: 0;
+  color: #003366;
+  background: url('background.jpg') center/cover no-repeat fixed;
+}
+
+header {
+  background-color: rgba(0, 153, 255, 0.9);
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header img {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+.top-nav {
+  background-color: #006bb3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: white;
+}
+
+.menu-section a,
+.social-section a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.menu-section a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  max-width: 100%;
+}
+
+.left-media,
+.center-slider,
+.right-slider {
+  flex: 1;
+  max-width: 32%;
+  min-width: 300px;
+}
+
+.left-media video,
+.left-media img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* ถ้ามี 3 ภาพ */
+  height: 100%;
+  animation: slide 15s infinite linear;
+}
+
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: 0 0 100%;
+}
+
+
+
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+.course-scroll-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  padding: 10px 0;
+  margin: 30px 0;
+  position: relative;
+}
+
+.course-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLoop 40s linear infinite;
+}
+
+.course-track img {
+  height: 150px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+@keyframes scrollLoop {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+.school-info {
+  text-align: center;
+  padding: 30px 10px;
+  background-color: rgba(224, 240, 255, 0.9);
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0099ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #007acc;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+}
