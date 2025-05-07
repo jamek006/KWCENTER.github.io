@@ -130,7 +130,9 @@ main {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
 }
-
+.course-scroll-container:hover .course-track {
+  animation-play-state: paused;
+}
 @keyframes scrollLoop {
   0% {
     transform: translateX(0%);
