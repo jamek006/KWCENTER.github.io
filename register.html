@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สมัครเรียน - โรงเรียนกวดวิชาแก่นวิทย์</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Sarabun', sans-serif;
+      background-color: #f4f9ff;
+      color: #003366;
+      padding: 20px;
+      background-image: url('KW Center-377.jpg'); /* ใส่ชื่อไฟล์ภาพพื้นหลัง */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 80px;
+    }
+
+    form {
+      background-color: #ffffff;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #0099ff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #007acc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="image.png" alt="โลโก้โรงเรียน">
+    <h1>แบบฟอร์มสมัครเรียน</h1>
+  </header>
+
+  <form action="https://formsubmit.co/kkwcenter01@gmail.com" method="POST">
+    <label for="studentName">ชื่อ - นามสกุล นักเรียน</label>
+    <input type="text" id="studentName" name="ชื่อนักเรียน" required>
+
+    <label for="grade">ระดับชั้นที่สมัคร</label>
+    <select id="grade" name="ระดับชั้นที่สมัคร" required>
+      <option value="">-- กรุณาเลือก --</option>
+      <option>ป.1-ป.2</option>
+      <option>ป.3-ป.4</option>
+      <option>ป.5</option>
+      <option>ป.6</option>
+      <option>ม.1</option>
+      <option>ม.2</option>
+      <option>ม.3</option>
+    </select>
+    <label for="grade">กลุ่มเรียน</label>
+    <select id="grade" name="กลุ่มเรียน" required>
+      <option value="">-- กรุณาเลือก --</option>
+      <option>วันเสาร์</option>
+      <option>วันอาทิตย์</option>
+      <option>หลังเลิกเรียน</option>
+      
+    </select>
+    <label for="school">โรงเรียนเดิม</label>
+    <input type="text" id="school" name="โรงเรียนเดิม">
+
+    <label for="parentName">ชื่อผู้ปกครอง</label>
+    <input type="text" id="parentName" name="ชื่อผู้ปกครอง" required>
+
+    <label for="phone">เบอร์โทรศัพท์ติดต่อ</label>
+    <input type="tel" id="phone" name="เบอร์โทรศัพท์" required>
+
+    <label for="notes">หมายเหตุเพิ่มเติม</label>
+    <textarea id="notes" name="หมายเหตุเพิ่มเติม" rows="4"></textarea>
+
+    <button type="submit">ส่งใบสมัคร</button>
+    <a href="index.html" class="back">&larr; กลับหน้าหลัก</a>
+  </form>
+</body>
+</html>
