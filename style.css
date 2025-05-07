@@ -133,6 +133,20 @@ main {
 .course-scroll-container:hover .course-track {
   animation-play-state: paused;
 }
+.course-track img {
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.course-track img:hover {
+  transform: scale(1.05); /* ขยาย 5% */
+  z-index: 2;
+}
+
 @keyframes scrollLoop {
   0% {
     transform: translateX(0%);
